@@ -97,9 +97,13 @@ button:hover{
 
 /* Header ==============================*/
 header {
-    background: #2D4A22;
-    padding: 2rem 0 10rem;
+    background: linear-gradient(135deg, #583a9c, #7b42ff);
+    padding: 5rem 0 10rem;
     text-align: center;
+}
+
+header img {
+    width: 250px;
 }
 
 #logo {
@@ -109,7 +113,7 @@ header {
 
 /* Balance ==============================*/
 #balance {
-    margin-top: -8rem;
+    margin-top: -6rem;
 }
 
 #balance h2 {
@@ -124,6 +128,7 @@ header {
     border-radius: 0.25rem;
 
     margin-bottom: 2rem;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, .4);
 }
 
 .card h3 {
@@ -139,7 +144,7 @@ header {
     line-height: 3rem;
     margin-top: 1rem;
 }
-.card.total { /* aplica para o card que tenha também a classe green */
+.card.total {
     background: var(--green);
     color: white;
 }
@@ -166,6 +171,7 @@ table thead tr td:last-child {
 
 table tbody tr {
     opacity: 0.7;
+    font-size: large;
 }
 table tbody tr:hover {
     opacity: 1;
@@ -181,6 +187,11 @@ table tbody td {
     background: #ffffff;
     padding: 1rem 2rem;
 }
+table tbody td i{
+    color: var(--red);
+    cursor: pointer;
+}
+
 td.description {
     color: var(--dark-blue);
 }
@@ -261,7 +272,21 @@ footer {
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+footer img {
+    width: 25px;
+    margin-left: 10px;
+    opacity: 0.6;
+}
+footer img:hover{
+    opacity: 1;
+}
+
 
 /* Responsive  ==============================*/
 @media(min-width: 800px){
